@@ -1,8 +1,9 @@
 import streamlit as st
+import os
 from openai import OpenAI
 
 # ---------- OPENAI CLIENT ----------
-client = OpenAI()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # ---------- PAGE CONFIG ----------
 st.set_page_config(
@@ -128,3 +129,4 @@ if st.button("🏠 Back to Home"):
     for key in list(st.session_state.keys()):
         del st.session_state[key]
     st.switch_page("app.py")
+
