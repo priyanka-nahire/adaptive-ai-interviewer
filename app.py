@@ -69,7 +69,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 
 # ---------------- FORM ----------------
 skill = st.selectbox("💼 Select Skill", ["Java", "Python", "DSA", "SQL"])
-level = st.selectbox("🎯 Select Experience Level", ["Beginner", "Intermiate", "Advanced"])
+level = st.selectbox("🎯 Select Experience Level", ["Beginner", "Intermediate", "Advanced"])
 
 if st.button("🚀 Start Interview"):
     st.session_state.skill = skill
