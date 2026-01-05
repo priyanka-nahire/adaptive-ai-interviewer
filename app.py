@@ -23,7 +23,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ---------------- IMAGE ----------------
-st.image("assets/ai_interview.png", width=700)
+#st.image("assets/ai_interview.png", width=700)
 
 # ---------------- CONTENT ----------------
 st.markdown("""
@@ -75,3 +75,4 @@ if st.button("🚀 Start Interview"):
     st.session_state.skill = skill
     st.session_state.level = level
     st.switch_page("pages/2_Interview.py")
+
