@@ -1,8 +1,9 @@
 import streamlit as st
+import os
 from openai import OpenAI
 
 # ---------- OPENAI CLIENT ----------
-client = OpenAI()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # ---------- PAGE CONFIG ----------
 st.set_page_config(
@@ -152,3 +153,4 @@ if st.session_state.feedback:
     st.success(st.session_state.feedback)
 
 st.markdown("</div>", unsafe_allow_html=True)
+
